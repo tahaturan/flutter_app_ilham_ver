@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blueGrey,
+        primarySwatch: Colors.deepOrange,
       ),
       home: const MyHomePage(title: 'Ilham Ver'),
     );
@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final double ekranGenisligi = ekranBilgisi.size.width;
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(widget.title,style: TextStyle(fontSize: ekranGenisligi/15 , color: Colors.white,)),
       ),
       body: Column(
         children: [
@@ -80,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     print("ilham Verildi");
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.green,
+                    primary: Colors.deepOrange,
                     
                   ),
                   ),
